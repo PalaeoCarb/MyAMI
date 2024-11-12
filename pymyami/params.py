@@ -457,14 +457,14 @@ def calc_lambda_zeta(TK):
     for i, ion in enumerate(ions):
         p = TabA12.loc[(TabA12.Parameter == 'lambda_BOH3') & (TabA12.i == ion), ['a']]
         if p.size > 0:
-            lambdaB[i] = p.values
+            lambdaB[i] = p.values.item()
             
     zetaB = np.zeros([2, 5])
     for i, cation in enumerate(cations):
         for j, anion in enumerate(anions):
             p = TabA12.loc[(TabA12.Parameter == 'zeta_BOH3') & (TabA12.i == cation) & (TabA12.j == anion), ['a']]
             if p.size > 0:
-                zetaB[j, i] = p.values
+                zetaB[j, i] = p.values.item()
     
     return {
         'lambdaCO2': lambdaCO2,
