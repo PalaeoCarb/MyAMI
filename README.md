@@ -24,7 +24,7 @@ The K correction factors calculated by `pymyami` are similar to those calculated
   K0: 0.00% max, 0.00% avg
   K1: 0.92% max, 0.05% avg
   K2: 3.77% max, -0.07% avg
-  KW: 2.35% max, -0.42% avg
+  KW: 4.49% max, -1.29% avg
   KB: 0.92% max, 0.05% avg
   KspA: 1.87% max, 0.04% avg
   KspC: 1.87% max, 0.04% avg
