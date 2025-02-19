@@ -7,7 +7,7 @@ import pandas as pd
 import importlib.resources as importlib_resources
 
 def MyAMI_parameter_file(fname=''):
-     return importlib_resources.files('pymyami') / f'parameters/{fname}'
+    return importlib_resources.files('pymyami') / f'parameters/{fname}'
 
 def expand_dims(orig, target):
     """

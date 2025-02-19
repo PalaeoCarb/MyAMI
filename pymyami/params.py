@@ -120,7 +120,7 @@ def get_ion_index(ions):
 
 # Load Parameter Tables for calculating pitzer parameters
 TABLES = {}
-fs = fs = glob(str(MyAMI_parameter_file('Tab*.csv')))
+fs = glob(str(MyAMI_parameter_file('Tab*.csv')))
 for f in fs:
     fname = os.path.split(f)[-1].replace('.csv', '')
     TABLES[fname] = pd.read_csv(f, comment='#')
